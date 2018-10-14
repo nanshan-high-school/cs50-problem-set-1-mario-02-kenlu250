@@ -8,13 +8,17 @@ int main(){
   if(height<1 || height>8)
     cout<<"母湯";
   else
-    for(int x=1; x<height+1; x++){
-      for(int y=height; y>x; y--){
+    for(int x=0; x<height; x++){
+      for(int y=x+1; y<height; y++){
         cout<< " ";
       }
-      for(int y=1; y<=x; y++){
+      for(int a=height-x; a<height; a++){
         cout<< "#";
       }
-      cout<< "\n";
-    }
+      cout<< "# ";
+      for(int b=height-x; b<height; b++){
+        cout<<"#";
+      }
+      cout<< "#\n";
+    }  
 }
