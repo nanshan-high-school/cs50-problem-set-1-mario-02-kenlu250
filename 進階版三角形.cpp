@@ -3,22 +3,22 @@ using namespace std;
 
 int main(){
   int height;
-  cout <<"請輸入1-8的一個數字:";
+  cout << "請輸入1-8的一個數字:";
   cin >> height;
-  if(height<1 || height>8)
-    cout<<"母湯";
+  if(height<1 && height>8)
+    cout << "母湯";
   else
     for(int x = 0; x < height; x++){
       for(int y = x + 1; y < height; y++){
-        cout<< " ";
+        cout << " ";
       }
       for(int a = height - x; a < height; a++){
-        cout<< "#";
+        cout << "#";
       }
-      cout<< "# ";
+      cout << "# ";
       for(int b = height - x; b < height; b++){
-        cout<<"#";
+        cout << "#";
       }
-      cout<< "#\n";
+      cout << "#\n";
     }  
 }
