@@ -8,15 +8,15 @@ int main(){
   if(height<1 || height>8)
     cout<<"母湯";
   else
-    for(int x=0; x<height; x++){
-      for(int y=x+1; y<height; y++){
+    for(int x = 0; x < height; x++){
+      for(int y = x + 1; y < height; y++){
         cout<< " ";
       }
-      for(int a=height-x; a<height; a++){
+      for(int a = height - x; a < height; a++){
         cout<< "#";
       }
       cout<< "# ";
-      for(int b=height-x; b<height; b++){
+      for(int b = height - x; b < height; b++){
         cout<<"#";
       }
       cout<< "#\n";
